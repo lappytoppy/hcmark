@@ -1,0 +1,16 @@
+#datatable-user_processing {
+	left: 45%;
+    margin: 0 auto auto;
+    position: absolute;
+    width: 100px;
+    background: url('../../img/ajax-loader.gif') no-repeat center left ;
+    padding-left: 21px;
+}
+.dashboard-charts .panel-body {
+	height: 200px;
+	background: url('../../img/ajax-loader.gif') no-repeat center 70px;
+}
+.dashboard-charts .toolbox {
+	margin-top: -8px;
+	margin-right: -13px;
+}

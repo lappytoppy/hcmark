@@ -1,0 +1,9 @@
+app/config/local
+app/storage/logs
+bootstrap/compiled.php
+vendor
+vendor/autoload.php
+.project
+composer.lock
+composer.jsoncomposer.lock
+public/uploads

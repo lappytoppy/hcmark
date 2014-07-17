@@ -15,23 +15,22 @@ class UserController extends BaseController {
      * Show the form for creating a new resource.
      *
      * @return View
-     */ 
+     */
     public function dashboard()
     {
-    	if ($this->isAdmin())
-		{
-			return Redirect::route('admin/dashboard');
-		}
+        if ($this->isAdmin()) {
+            return Redirect::route('admin/dashboard');
+        }
         $this->data['meta'] = array(
             'title' => Lang::get('meta.dashboard_title')
-            );
+        );
 
         $charts = $this->_dashboard_charts();
 
         return View::make('user.dashboard')
-        ->with('meta', $this->data['meta'])
-        ->with('charts', $charts);
-    } 
+            ->with('meta', $this->data['meta'])
+            ->with('charts', $charts);
+    }
 
     // --------------------------------------------------------------------
 

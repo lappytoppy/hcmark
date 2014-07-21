@@ -25,7 +25,8 @@ class UserController extends BaseController {
             'title' => Lang::get('meta.dashboard_title')
         );
 
-        $charts = $this->_dashboard_charts();
+	$charts = $this->_dashboard_charts();
+	$selective_css=$this->sel_css('yes');
 
         return View::make('user.dashboard')
             ->with('meta', $this->data['meta'])

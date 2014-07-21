@@ -6,17 +6,31 @@ class BaseController extends Controller {
 	// Global array for method interaction
     public $data = array();
 
-    /**
+   	 /**
 	 * Collect userr information into data array.
 	 *
 	 * @return none
 	 */
 	public function __construct()
     {
-        // Assign user data to global array 
+	    // Assign user data to global array
+	    echo "";  
     }
 
     // --------------------------------------------------------------------
+	/**
+	 *Commomn Class for selective CSS
+	 */
+	public function sel_css($yes='no')
+	{
+	$yes=$yes;
+	}
+	
+
+
+
+
+	// -------------------------------------------------------------------
 	/**
 	 * Setup the layout used by the controller.
 	 *

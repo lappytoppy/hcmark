@@ -9,7 +9,7 @@
 
         @foreach($assets as $asset)
             @foreach($asset['request_match'] as $req)
-                @if (Request::is($req))
+                @if (Request::is($req) && $req != '*')
                     @if (isset($asset['css']))
 		    @foreach($asset['css'] as $css)
                         {{ HTML::style($css) }}

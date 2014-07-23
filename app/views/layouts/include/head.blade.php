@@ -11,7 +11,7 @@
             @foreach($asset['request_match'] as $req)
                 @if (Request::is($req))
                     @if (isset($asset['css']))
-                    @foreach($asset['css'] as $css)
+		    @foreach($asset['css'] as $css)
                         {{ HTML::style($css) }}
                     @endforeach
                     @endif

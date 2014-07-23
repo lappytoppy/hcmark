@@ -5,7 +5,7 @@ return array(
      * Javascript on footer
      */
     array(
-                      /* this means all pages */
+        /* this means all pages */
         'request_match' => array('*'),
         'css' => array(
             /* MAIN CSS (REQUIRED ALL PAGE) */
@@ -77,7 +77,7 @@ return array(
             '/assets/plugins/c3-chart/c3.min.js',
             /* HIGHCHARTS */
             '/assets/plugins/highcharts/highcharts.js',
-            /* MAIN APPS JS */ 
+            /* MAIN APPS JS */
             '/assets/js/sections/common.js',
         ),
         'js-ifie' => array(
@@ -87,7 +87,24 @@ return array(
         )
     ),
     array(
-                          /* pages starts with admin/users */
+        /* pages starts with dashboard */
+        'request_match' => array('dashboard*'),
+        'css' => array(
+            '/assets/css/bootstrap.min.css',
+            '/assets/plugins/font-awesome/css/font-awesome.min.css',
+            '/assets/css/style.css',
+            '/assets/css/style-responsive.css',
+            '/assets/css/sections/common.css',
+        ),
+        'js' => array(
+            /* jquery upload */
+            '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
+        )
+    )
+,
+    array(
+        /* pages starts with admin/users */
         'request_match' => array('admin/users*'),
         'css' => array(
             '/assets/plugins/jquery-fileupload/jquery.fileupload.css',
@@ -97,6 +114,57 @@ return array(
             /* jquery upload */
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
             '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
-         )
+        )
+    )
+,
+    array(
+        /* pages starts with admin/dashboard */
+        'request_match' => array('admin/dashboard*'),
+        'css' => array(
+            '/assets/css/bootstrap.min.css',
+            '/assets/plugins/font-awesome/css/font-awesome.min.css',
+            '/assets/css/style.css',
+            '/assets/css/style-responsive.css',
+            '/assets/css/sections/common.css',
+        ),
+        'js' => array(
+            /* jquery upload */
+            '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
+        )
+    )
+,
+    array(
+        /* pages starts with admin/users */
+        'request_match' => array('admin/users*'),
+        'css' => array(
+            '/assets/css/bootstrap.min.css',
+            '/assets/plugins/font-awesome/css/font-awesome.min.css',
+            '/assets/css/style.css',
+            '/assets/css/style-responsive.css',
+            '/assets/css/sections/common.css',
+        ),
+        'js' => array(
+            /* jquery upload */
+            '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
+        )
+    )
+,
+    array(
+        /* pages starts with admin/properties */
+        'request_match' => array('admin/properties*'),
+        'css' => array(
+            '/assets/css/bootstrap.min.css',
+            '/assets/plugins/font-awesome/css/font-awesome.min.css',
+            '/assets/css/style.css',
+            '/assets/css/style-responsive.css',
+            '/assets/css/sections/common.css',
+        ),
+        'js' => array(
+            /* jquery upload */
+            '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
+        )
     )
 );

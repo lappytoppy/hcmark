@@ -17,7 +17,7 @@ $links = Config::get("template.user_menu_links.$group");
                     
                     <!-- Begin Logo brand -->
                     <div class="logo-brand">
-                        <a href="#"><h3>Hotel Classification Management</h3></a>
+                        <a href="#"><img src="/assets/img/sentir-logo-primary.png" alt="Logo"></a>
                     </div><!-- /.logo-brand -->
                     <!-- End Logo brand -->
                     

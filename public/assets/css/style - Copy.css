@@ -112,25 +112,17 @@ body.lock{
 }
 .top-navbar-inner{position: relative;}
 .logo-brand {
-	/* width: 250px; */
+	width: 250px;
 	height: 60px;
 	position: absolute;
-	left: 15px;
+	left: 0;
 	top: 0;
 	font-size: 20px;
 	font-weight: 700;
 	padding: 0;
 	text-align: center;
-	/*background: #242A34;*/
-	background: #fff;
-	color: #656D78;
-}
-.logo-brand  a{
-color:#656D78;
-}
-.logo-brand  a:hover{
-text-decoration:none;
-color:#656D78;
+	background: #242A34;
+	color: #fff;
 }
 .logo-brand img{
 	width: auto;
@@ -426,7 +418,7 @@ ul.sidebar-menu li.text-content.profile-summary{
 }
 .page-content{
 	padding: 0;
-	/*margin-left: 250px;*/
+	margin-left: 250px;
 	margin-top: 0;
 	z-index: 2;
 	background: #E8E9EE;
@@ -6872,37 +6864,4 @@ You can remove this style if you want c:
 
 .multiselect-container li label {
     margin: 0;
-}
-
-.hanna
-{
-background: none repeat scroll 0 0 #313940;
-height: 50px;
-width: 100%;
-color:#fff
-}
-.hanna ul
-{
-list-style:none;
-display:inline;
-}
-.hanna li
-{
-float:left;
-text-align:center;
-padding:5px;
-}
-.hanna a
-{
-color:#AAB2BD;
-}
-.hanna .selected a,
-.hanna .selected a:hover,
-.hanna .selected a:focus,
-.hanna .active a,
-.hanna .active a:hover,
-.hanna .active a:focus{
-	color: #E6E9ED;
-	background-color: #2C3439;
-	border-bottom: 1px solid #2C3439;
 }

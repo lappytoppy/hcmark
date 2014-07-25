@@ -25,7 +25,9 @@
 	<body class="login tooltips">
 	 	<!-- Start body content -->
 	 	<div class="login-header text-center">
-			<img src="/assets/img/logo-login.png" class="logo" alt="Logo">
+		<img style="margin-top:10px" src="/assets/img/moc.jpg"><br>
+			<!--<img src="/assets/img/logo-login.png" class="logo" alt="Logo">-->
+			<h3 style="color:#fff;font-weight:700;margin-top: 40px;">Hotel Classification Management</h3>
 		</div>
 		<div id="page-wrapper">
 			 @yield('content')

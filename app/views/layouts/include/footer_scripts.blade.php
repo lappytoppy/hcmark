@@ -2,7 +2,7 @@
 
 @foreach($assets as $asset)
     @foreach($asset['request_match'] as $req)
-        @if (Request::is($req))
+        @if (Request::is($req) && $req != '*')
             @if (isset($asset['js']))
             @foreach($asset['js'] as $js)
                 {{ HTML::script($js) }}

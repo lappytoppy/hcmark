@@ -173,6 +173,11 @@ return array(
         ),
         'js' => array(
             /* jquery upload */
+            '/assets/js/jquery.min.js',
+		'/assets/js/bootstrap.min.js',
+		'/assets/js/bootstrap-multiselect.js',
+		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
+            '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
             '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
         )

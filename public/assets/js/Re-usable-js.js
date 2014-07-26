@@ -1,3 +1,4 @@
+$(document).ready(function(){
 var urls = {
         'usrCustomize': '{{ route("admin.customize_modal") }}',
         'editUser': '{{ route("admin.edit_user") }}'
@@ -130,3 +131,4 @@ jQuery().ready(function () {
             });
     })
 });
+})

@@ -129,5 +129,4 @@ jQuery().ready(function () {
                     });
             });
     })
-});
-
+})

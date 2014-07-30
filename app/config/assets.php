@@ -100,6 +100,10 @@ return array(
         'js' => array(
             /* jquery upload */
             '/assets/js/jquery.min.js',
+		'/assets/js/bootstrap.min.js',
+		'/assets/js/bootstrap-multiselect.js',
+		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
+            '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
             '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
             'assets/js/Re-usable-js.js'
@@ -147,7 +151,31 @@ return array(
 		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
             '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
-            '/assets/plugins/jquery-fileupload/jquery.fileupload.js'
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
+            'assets/js/Re-usable-js.js'
+        )
+    ),
+   
+    array(
+        /* pages starts with dashboard */
+        'request_match' => array('dashboard*'),
+        'css' => array(
+            '/assets/css/bootstrap.min.css',
+            '/assets/plugins/font-awesome/css/font-awesome.min.css',
+            '/assets/css/style.css',
+            '/assets/css/style-responsive.css',
+            '/assets/css/sections/common.css',
+        ),
+        'js' => array(
+            /* jquery upload */
+           '/assets/js/jquery.min.js',
+		'/assets/js/bootstrap.min.js',
+		'/assets/js/bootstrap-multiselect.js',
+		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
+            '/assets/plugins/datatable/js/bootstrap.datatable.js',
+            '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
+            'assets/js/Re-usable-js.js'
         )
     )
 );

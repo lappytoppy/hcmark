@@ -35,16 +35,19 @@ class AdminController extends BaseController {
 	public function users()
 	{
 		$this->data['meta'] = array(
-            'title' => Lang::get('meta.dashboard_title')
+            'title' => Lang::get('meta.dashboard_title'),
+            'usrCustomize' => route("admin.customize_modal"),
+            'error' => Lang::get("messages.general"),
+            'editUser' => route("admin.edit_user")
             ); 
         $group = Group::g_list();
         $features = Features::g_list();
-        $properties = Properties::g_list();
+	$properties = Properties::g_list();
         return View::make('admin.users.index')
                 ->with('meta', $this->data['meta'])
                 ->with('group', $group)
                 ->with('features',$features)
-                ->with('properties',$properties);
+		->with('properties',$properties);
 	}
 	
     // --------------------------------------------------------------------
@@ -351,13 +354,20 @@ class AdminController extends BaseController {
     
     public function properties()
     {
+        $this->data['meta'] = array(
+            'title' => Lang::get('meta.dashboard_title'),
+            'usrCustomize' => route("admin.customize_modal"),
+            'error' => Lang::get("messages.general"),
+            'editUser' => route("admin.edit_user")
+        );
         $property_types = Property_types::g_list();
-        $star_ratings   = Star_ratings::g_list();
-        $pms_configs    = Pms_configs::g_list();
+        $star_ratings = Star_ratings::g_list();
+        $pms_configs = Pms_configs::g_list();
         return View::make('admin.properties.index')
-                   ->with('property_types', $property_types)
-                   ->with('star_ratings', $star_ratings)
-                   ->with('pms_configs', $pms_configs);
+            ->with('property_types', $property_types)
+            ->with('star_ratings', $star_ratings)
+            ->with('pms_configs', $pms_configs)
+            ->with('meta', $this->data['meta']);
     }
 
     public function propertiesListApi()

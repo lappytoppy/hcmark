@@ -1,7 +1,9 @@
 @extends('layouts.admin')
 
 @section('content')
-
+<span data-usrCustomize="<?php echo $meta['usrCustomize']; ?>" id="usrCustomize">
+<span data-editUser="<?php echo $meta['editUser']; ?>" id="editUser">
+    <span data-error="<?php echo $meta['error']; ?>" id="error">
 <div class="container-fluid">
 
 <!-- Begin page heading -->

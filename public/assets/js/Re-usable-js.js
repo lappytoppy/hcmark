@@ -1,9 +1,13 @@
+var usrCustomize1=document.getElementById('usrCustomize').dataset;
+var editUser1=document.getElementById('editUser').dataset;
+var error1=document.getElementById('error').dataset;
+
 var urls = {
-        'usrCustomize': '{{ route("admin.customize_modal") }}',
-        'editUser': '{{ route("admin.edit_user") }}'
+        'usrCustomize': usrCustomize1,
+        'editUser': editUser1
     },
     messages = {
-        'error': '{{ Lang::get("messages.general") }}'
+        'error': error1
     },
     __alert = {
         'insert': function (_element, _message, _class) {

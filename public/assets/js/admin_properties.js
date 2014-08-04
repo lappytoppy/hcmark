@@ -128,7 +128,6 @@ $(document).ready(function () {
         epf: propertiesListApi11,
         cls: ['ppn', 'fln', 'eml', 'tlp', 'nts', 'id', 'ppt', 'str', 'pms', 'pmr']
     }
-    alert(lnk.epf);
     jQuery(document).ready(function () {
         $('#uni-modal').on('submit', '#form-add-prop', function (e) {
             e.preventDefault();

@@ -2,9 +2,9 @@
 
 @section('content')
 <span data-usrCustomize="<?php echo $meta['usrCustomize']; ?>" id="usrCustomize">
-<span data-editUser="<?php echo $meta['editUser']; ?>" id="editUser">
-<span data-error="<?php echo $meta['error']; ?>" id="error">
-<span data-propstr="<?php echo $meta['propstr']; ?>" id="propstr">
+    <span data-editUser="<?php echo $meta['editUser']; ?>" id="editUser">
+    <span data-error="<?php echo $meta['error']; ?>" id="error">
+    <span data-propstr="<?php echo $meta['propstr']; ?>" id="propstr">
 
 
 
@@ -163,8 +163,8 @@ $propForm = array(
 
 ?>
 
-    <span data-propForm=<?php echo "'".json_encode($propForm)."'"; ?> id="propForm">
-    <span data-msgs=<?php echo "'".json_encode($meta)."'"; ?> id="msgs">
+    <span data-propForm=<?php echo "'" . json_encode($propForm) . "'"; ?> id="propForm">
+    <span data-msgs=<?php echo "'" . json_encode($meta) . "'"; ?> id="msgs">
     <span data-proApi="<?php echo $meta['propertiesListApi']; ?>" id="proApi">
         @stop
 

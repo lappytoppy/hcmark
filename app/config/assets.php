@@ -387,8 +387,8 @@ return array(
             '/assets/plugins/highcharts/highcharts.js',
             /* MAIN APPS JS */
             '/assets/js/sections/common.js',
-            '/assets/js/admin_properties.js'
-            //'assets/js/Re-usable-js.js',
+            '/assets/js/admin_properties.js',
+            '/assets/js/Re-usable-js.js'
 
         ),
         'js-ifie' => array(

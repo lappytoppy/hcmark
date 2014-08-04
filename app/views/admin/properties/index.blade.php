@@ -158,11 +158,14 @@ $propForm = array(
         )
     )
 );
+//$jse=json_encode($meta);
+//echo $jse;
 
 ?>
+
     <span data-propForm=<?php echo "'".json_encode($propForm)."'"; ?> id="propForm">
     <span data-msgs=<?php echo "'".json_encode($meta)."'"; ?> id="msgs">
-    <span data-propertiesListApi="<?php echo $meta['propertiesListApi']; ?>" id="propertiesListApi">
+    <span data-proApi="<?php echo $meta['propertiesListApi']; ?>" id="proApi">
         @stop
 
 @section('inline_scripts')

@@ -5,12 +5,10 @@ $(document).ready(function () {
     var propstr1 = document.getElementById('propstr').dataset;
     var propForm1 = document.getElementById('propForm').dataset;
     var msgs1 = document.getElementById('msgs').dataset.msgs;
-
-    var propertiesListApi11 = document.getElementById('propertiesListApi').dataset.propertiesListApi;
+    var propertiesListApi11 = $("span#proApi").data("proapi");
     var dtId = "#datatable-properties";
     var propList = jQuery(dtId).DataTable();
     var obj = JSON.parse(msgs1);
-    //var obj2 = JSON.parse(propertiesListApi11);
     function generateForm(_elem, _settings, _data, _lang, _edit) {
         return tmpl(_elem, {s: _settings, d: _data, l: _lang, e: _edit});
     }
@@ -130,7 +128,7 @@ $(document).ready(function () {
         epf: propertiesListApi11,
         cls: ['ppn', 'fln', 'eml', 'tlp', 'nts', 'id', 'ppt', 'str', 'pms', 'pmr']
     }
-alert(propertiesListApi11);
+    alert(lnk.epf);
     jQuery(document).ready(function () {
         $('#uni-modal').on('submit', '#form-add-prop', function (e) {
             e.preventDefault();

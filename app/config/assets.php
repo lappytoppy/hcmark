@@ -85,8 +85,8 @@ return array(
             'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js',
             'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'
         )
-),
- array(
+    ),
+    array(
         /* this means all pages */
         'request_match' => array('dashboard'),
         'css' => array(
@@ -167,8 +167,8 @@ return array(
             'https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js',
             'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'
         )
-),
-array(
+    ),
+    array(
         /* this means all pages */
         'request_match' => array('account'),
         'css' => array(
@@ -250,7 +250,6 @@ array(
             'https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js'
         )
     ),
-   
     array(
         /* pages starts with admin/dashboard */
         'request_match' => array('admin/dashboard*'),
@@ -263,14 +262,13 @@ array(
         ),
         'js' => array(
             /* jquery upload */
-           	'/assets/js/jquery.min.js',
-		'/assets/js/bootstrap.min.js',
-		'/assets/js/bootstrap-multiselect.js',
-		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
+            '/assets/js/jquery.min.js',
+            '/assets/js/bootstrap.min.js',
+            '/assets/js/bootstrap-multiselect.js',
+            '/assets/plugins/datatable/js/jquery.dataTables.min.js',
             '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
-	    '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
-	'assets/js/admin_users.js'
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
         )
     )
 ,
@@ -301,15 +299,15 @@ array(
             '/assets/plugins/datatable/css/bootstrap.datatable.min.css'
         ),
         'js' => array(
-		/* jquery upload */
-		'/assets/js/jquery.min.js',
-		'/assets/js/bootstrap.min.js',
-		'/assets/js/bootstrap-multiselect.js',
-		'/assets/plugins/datatable/js/jquery.dataTables.min.js',
+            /* jquery upload */
+            '/assets/js/jquery.min.js',
+            '/assets/js/bootstrap.min.js',
+            '/assets/js/bootstrap-multiselect.js',
+            '/assets/plugins/datatable/js/jquery.dataTables.min.js',
             '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
-	    '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
-	'assets/js/admin_users.js',
+            '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
+            'assets/js/admin_users.js',
             'assets/js/Re-usable-js.js',
         )
     )
@@ -389,6 +387,9 @@ array(
             '/assets/plugins/highcharts/highcharts.js',
             /* MAIN APPS JS */
             '/assets/js/sections/common.js',
+            '/assets/js/admin_properties.js'
+            //'assets/js/Re-usable-js.js',
+
         ),
         'js-ifie' => array(
             '/assets/plugins/jquery-knob/excanvas.js',

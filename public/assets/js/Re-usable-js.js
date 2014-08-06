@@ -1,6 +1,10 @@
-var usrCustomize1 = document.getElementById('usrCustomize').dataset;
-var editUser1 = document.getElementById('editUser').dataset;
-var error1 = document.getElementById('error').dataset;
+var usrCustomize1 = document.getElementById('usrCustomize').dataset.usrcustomize;
+var editUser1 = document.getElementById('editUser').dataset.edituser;
+var error1 = document.getElementById('error').dataset.error;
+var user_update1 = document.getElementById('user_update').dataset.user_update;
+var spinner1 = document.getElementById('spinner').dataset.spinner;
+var account_edit1 = document.getElementById('account_edit').dataset;
+
 
 var urls = {
         'usrCustomize': usrCustomize1,
@@ -42,7 +46,7 @@ var urls = {
     },
     spinner = {
         'hover': function (element) {
-            jQuery(element).prepend(jQuery('<div class="spinner-hover" style="position: absolute;z-index: 1024;width: 100%;height: 100%;display: block;background-color: #FFF;background-image: url(\'{{ Config::get("template.url.spinner") }}\');background-repeat: no-repeat;background-position: center;opacity: 0.4;"></div>'));
+            jQuery(element).prepend(jQuery('<div class="spinner-hover" style="position: absolute;z-index: 1024;width: 100%;height: 100%;display: block;background-color: #FFF;background-image: url(' + spinner1 + ');background-repeat: no-repeat;background-position: center;opacity: 0.4;"></div>'));
         },
         'remove': function (element) {
             jQuery(element).find('.spinner-hover').fadeOut().remove();
@@ -65,7 +69,7 @@ var urls = {
                     data: data
                 })
                     .fail(function () {
-                        var error = '{{ Lang::get("messages.general") }}';
+                        var error = error1;
                         $m.find('.modal-body').text(error);
                     })
                     .success(function (rcv) {
@@ -88,7 +92,7 @@ var urls = {
             spinner.remove('#uni-modal .modal-content');
         },
         'error': function () {
-            modal.open(false, false, '{{ Lang::get("messages.general") }}');
+            modal.open(false, false, error1);
         }
     },
     _confirm = function (msg, func) {
@@ -106,7 +110,7 @@ jQuery().ready(function () {
         jQuery('#global-edit-account').modal('show');
         $.ajax({
             type: "GET",
-            url: "{{ route('account_edit') }}"
+            url: account_edit1
         })
             .success(function (data) {
                 jQuery('#global-edit-account > .modal-dialog').html(data);
@@ -118,7 +122,7 @@ jQuery().ready(function () {
         $.ajax({
             type: "POST",
             data: $frm.serialize(),
-            url: "{{ route('user_update') }}"
+            url: "user_update1"
         })
             .success(function (data) {
                 $ch = jQuery('#edit-modal-handler').html();
@@ -126,7 +130,7 @@ jQuery().ready(function () {
                 jQuery('#global-edit-account').modal('show');
                 $.ajax({
                     type: "GET",
-                    url: "{{ route('account_edit') }}"
+                    url: account_edit1
                 })
                     .success(function (data) {
                         jQuery('#global-edit-account > .modal-dialog').html(data);

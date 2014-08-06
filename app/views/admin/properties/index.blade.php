@@ -163,9 +163,15 @@ $propForm = array(
 
 ?>
 
+
+    <span data-user_update=<?php echo $meta['user_update']; ?> id="user_update">
     <span data-propForm=<?php echo "'" . json_encode($propForm) . "'"; ?> id="propForm">
     <span data-msgs=<?php echo "'" . json_encode($meta) . "'"; ?> id="msgs">
     <span data-proApi="<?php echo $meta['propertiesListApi']; ?>" id="proApi">
+    <span data-spinner="<?php echo $meta['spinner']; ?>" id="spinner">
+        <span data-account_edit="<?php echo $meta['account_edit']; ?>" id="account_edit">
+
+
         @stop
 
 @section('inline_scripts')

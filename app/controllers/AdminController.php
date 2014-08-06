@@ -339,6 +339,9 @@ class AdminController extends BaseController
     public function properties()
     {
         $this->data['meta'] = array(
+            'account_edit' => route('account_edit'),
+            'spinner' => Config::get("template.url.spinner"),
+            'user_update' => route('user_update'),
             'title' => Lang::get('meta.dashboard_title'),
             'usrCustomize' => route("admin.customize_modal"),
             'error' => Lang::get("messages.general"),

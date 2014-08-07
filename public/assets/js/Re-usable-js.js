@@ -79,7 +79,7 @@ var urls = {
                         } else {
                             content = rcv;
                         }
-                        $m.find('.modal-body').html(content);
+                        $m.find('.modal-body').html(content);// here
                     });
             } else {
                 $m.find('.modal-body').html(data);

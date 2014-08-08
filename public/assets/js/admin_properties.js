@@ -98,7 +98,7 @@ $(document).ready(function () {
         return result;
     }
 
-    var msgss = {
+    var msgs = {
         gnrl: obj.gnrl,
         npf: obj.npf,
         epf: obj.epf,

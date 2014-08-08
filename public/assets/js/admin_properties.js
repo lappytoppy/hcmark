@@ -4,6 +4,7 @@ $(document).ready(function () {
     var error1 = document.getElementById('error').dataset.error;
     var propstr1 = document.getElementById('propstr').dataset.propstr;
     var propForm1 = document.getElementById('propForm').dataset.propform;
+    propForm1 = JSON.parse(propForm1);
     var msgs1 = document.getElementById('msgs').dataset.msgs;
     var propertiesListApi11 = $("span#proApi").data("proapi");
     var dtId = "#datatable-properties";

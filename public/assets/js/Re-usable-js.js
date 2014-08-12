@@ -4,7 +4,7 @@ var error1 = document.getElementById('error').dataset.error;
 var user_update1 = document.getElementById('user_update').dataset.user_update;
 var spinner1 = document.getElementById('spinner').dataset.spinner;
 var account_edit1 = document.getElementById('account_edit').dataset;
-
+console.trace();
 
 var urls = {
         'usrCustomize': usrCustomize1,

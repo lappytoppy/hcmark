@@ -307,8 +307,9 @@ return array(
             '/assets/plugins/datatable/js/bootstrap.datatable.js',
             '/assets/plugins/jquery-ui/js/jquery-ui-1.10.4.min.js',
             '/assets/plugins/jquery-fileupload/jquery.fileupload.js',
-            'assets/js/admin_users.js',
             'assets/js/Re-usable-js.js',
+            'assets/js/admin_users.js',
+
         )
     )
 ,
@@ -370,13 +371,6 @@ return array(
             /* KNOB JS */
             '/assets/plugins/jquery-knob/jquery.knob.js',
             '/assets/plugins/jquery-knob/knob.js',
-            /* FLOT CHART JS */
-            '/assets/plugins/flot-chart/jquery.flot.js',
-            '/assets/plugins/flot-chart/jquery.flot.tooltip.js',
-            '/assets/plugins/flot-chart/jquery.flot.resize.js',
-            '/assets/plugins/flot-chart/jquery.flot.selection.js',
-            '/assets/plugins/flot-chart/jquery.flot.stack.js',
-            '/assets/plugins/flot-chart/jquery.flot.time.js',
             /* MORRIS JS */
             '/assets/plugins/morris-chart/raphael.min.js',
             '/assets/plugins/morris-chart/morris.min.js',
@@ -386,9 +380,9 @@ return array(
             /* HIGHCHARTS */
             '/assets/plugins/highcharts/highcharts.js',
             /* MAIN APPS JS */
+            '/assets/js/Re-usable-js.js',
             '/assets/js/sections/common.js',
-            '/assets/js/admin_properties.js',
-            '/assets/js/Re-usable-js.js'
+            '/assets/js/admin_properties.js'
 
         ),
         'js-ifie' => array(

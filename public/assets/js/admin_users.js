@@ -417,6 +417,6 @@ $(document).ready(function(){
        "fnRowCallback": function( nRow, aData, iDisplayIndex, iDisplayIndexFull ) {
           $('td:eq(4)', nRow).addClass( "action" );
         },
-       "sAjaxSource": 'http://hcs.com/admin/user_list'
+       "sAjaxSource": '/admin/user_list'
      });
 });

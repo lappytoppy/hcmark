@@ -37,9 +37,33 @@ class AdminController extends BaseController
     {
         $this->data['meta'] = array(
             'title' => Lang::get('meta.dashboard_title'),
+            'headings_edit_user' => Lang::get("headings.edit_user"),
+            'spinner' => Config::get("template.url.spinner"),
             'usrCustomize' => route("admin.customize_modal"),
             'error' => Lang::get("messages.general"),
-            'editUser' => route("admin.edit_user")
+            'user_update' => route('user_update'),
+            'account_edit' => route('account_edit'),
+            'ui_cancel' => Lang::get("ui.cancel"),
+            'editUser' => route("admin.edit_user"),
+            'ui_delete' => Lang::get("ui.delete"),
+            'no_selected' => Lang::get("labels.no_selected"),
+            'gnrl' => Lang::get("messages.general"),
+            'fln' => Lang::get("ui.full_name"),
+            'fln_p' => Lang::get("ui.full_name_p"),
+            'tlp' => Lang::get("labels.telephone"),
+            'tlp_p' => Lang::get("labels.telephone_p"),
+            'eml' => Lang::get("ui.email_add"),
+            'eml_p' => Lang::get("ui.email_p"),
+            'nts' => Lang::get("labels.notes"),
+            'nts_p' => Lang::get("labels.notes_p"),
+            'str' => Lang::get("ui.star_rating"),
+            'str_p' => Lang::get("ui.star_rating_p"),
+            'str_d' => Lang::get("ui.star_rating_d"),
+            'pms' => Lang::get("ui.pms_config"),
+            'pms_p' => Lang::get("ui.pms_config_p"),
+            'pmr' => Lang::get("ui.pms_acc_ref"),
+            'pmr_p' => Lang::get("ui.pms_acc_ref_p"),
+            'del_a' => Lang::get("ui.confirm_delete")
         );
         $group = Group::g_list();
         $features = Features::g_list();

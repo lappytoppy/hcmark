@@ -3,7 +3,18 @@
 @section('content')
 <span data-usrCustomize="<?php echo $meta['usrCustomize']; ?>" id="usrCustomize">
 <span data-editUser="<?php echo $meta['editUser']; ?>" id="editUser">
-    <span data-error="<?php echo $meta['error']; ?>" id="error">
+<span data-error="<?php echo $meta['error']; ?>" id="error">
+<span data-user_update=<?php echo $meta['user_update']; ?> id="user_update">
+<span data-spinner=<?php echo $meta['spinner']; ?> id="spinner">
+<span data-account_edit=<?php echo $meta['account_edit']; ?> id="account_edit">
+<span data-msgs=<?php echo "'" . json_encode($meta) . "'"; ?> id="msgs">
+<span data-no_selected=<?php echo $meta['no_selected']; ?> id="no_selected">
+<span data-headings_edit_user=<?php echo $meta['headings_edit_user']; ?> id="headings_edit_user">
+<span data-ui_delete=<?php echo $meta['ui_delete']; ?> id="ui_delete">
+<span data-ui_cancel=<?php echo $meta['ui_cancel']; ?> id="ui_cancel">
+
+
+
 
 <div class="container-fluid">
 
